@@ -1,0 +1,34 @@
+<!doctype html><html dir="ltr" lang="en"><head> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0"> <title>Stencil Component Starter</title> <script type="module" src="/build/stencil.esm.js" data-stencil></script> <script nomodule="" src="/build/stencil.js" data-stencil></script> </head> <body> <stock-price stock-symbol="AAPL"></stock-price> <stock-finder></stock-finder> <!--<button id="side-drawer-btn">Open Side Menu</button>
+<side-drawer title="Main Menu">
+  <nav class="side-nav">
+    <ul>
+      <li><a href="/">A Link</a></li>
+      <li><a href="/">Another Link</a></li>
+      <li><a href="/">A third Link</a></li>
+    </ul>
+  </nav>
+</side-drawer>
+
+<script>
+  const sideDrawerButton = document.querySelector("#side-drawer-btn")
+  const sideDrawer = document.querySelector("side-drawer")
+  sideDrawerButton.addEventListener("click", () => {
+    if (!sideDrawer.opened) {
+      console.log("Opening side drawer...")
+      sideDrawer.open()
+    }
+  })
+  setTimeout(() => {
+    // sideDrawer.title = 'It changed!';
+    // sideDrawer.setAttribute('title', 'It changed via Attribute');
+  }, 3000)
+</script>--> <script>
+if ('serviceWorker' in navigator && location.protocol !== 'file:') {
+  // auto-unregister service worker during dev mode
+  navigator.serviceWorker.getRegistration().then(function(registration) {
+  if (registration) {
+    registration.unregister().then(function() { location.reload(true) });
+  }
+  });
+}
+</script></body></html>
